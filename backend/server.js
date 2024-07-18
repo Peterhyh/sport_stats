@@ -6,12 +6,12 @@ const mongoose = require("mongoose");
 const app = express()
 app.use(cors())
 
-// const db = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "",
-//     database: "sports_stats"
-// })
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "sports_stats"
+})
 
 app.get('/', (req, res) => {
     return res.json("From backend side");
