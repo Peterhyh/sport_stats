@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
-
+// const mongoose = require("mongoose");
 
 const app = express()
 app.use(cors())
